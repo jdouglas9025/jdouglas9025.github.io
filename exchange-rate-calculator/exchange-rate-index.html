@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="exchange-rate-style.css" rel="stylesheet">
+    <link href="/images/icon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/images/icon.ico" rel="icon" type="image/x-icon">
+    <title>Exchange Rate Calculator App</title>
+</head>
+<header>
+    <ul class="nav-bar">
+        <li class="nav-bar-items"><a href="/index.html#section1">Home</a></li>
+        <li class="nav-bar-items"><a href="/index.html#section2">About Me</a></li>
+        <li class="nav-bar-items"><a href="/index.html#section3">Projects</a></li>
+    </ul>
+</header>
+
+<body>
+<p class="project-description">Key JS highlights: fetches data from a web service, "Rates By Exchange Rate API"
+    (https://www.exchangerate-api.com), in real-time to display current exchange rates and allows user to dynamically
+    convert currencies.</p>
+<div class="app-container">
+    <h1>Exchange Rate Calculator</h1>
+
+    <img alt="An image of money." class="money-img" src="images/money.png">
+
+    <p>Select two currencies and provide an amount to convert.</p>
+
+    <div class="container">
+        <div class="currency">
+            <label for="base-currency">
+                <select class="currency-selection" id="base-currency">
+                    <option value="AUD">AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="HKD">HKD</option>
+                    <option value="INR">INR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="KRW">KRW</option>
+                    <option value="NZD">NZD</option>
+                    <!-- Default selection -->
+                    <option selected value="USD">USD</option>
+                </select>
+                <input class="currency-input" id="base-currency-amount" max="1000000" min="0" type="number" value="1">
+            </label>
+        </div>
+
+        <!-- Exchange rate container-->
+        <div class="exchange-rate" id="exchange-rate">Rate unavailable</div>
+
+        <div class="currency">
+            <label for="target-currency">
+                <select class="currency-selection" id="target-currency">
+                    <option value="AUD">AUD</option>
+                    <!-- Default selection -->
+                    <option selected value="CAD">CAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="HKD">HKD</option>
+                    <option value="INR">INR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="KRW">KRW</option>
+                    <option value="NZD">NZD</option>
+                    <option value="USD">USD</option>
+                </select>
+                <input class="currency-input" id="target-currency-amount" readonly type="number">
+            </label>
+        </div>
+    </div>
+</div>
+<script src="exchange-rate-script.js"></script>
+</body>
+</html>

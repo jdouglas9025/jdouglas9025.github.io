@@ -1,0 +1,108 @@
+@charset "ISO-8859-1";
+/* Style sheet for Exchange Rate App */
+
+/* Import Lato font from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+:root {
+    --primary-color: #53d78e; /*Var declaration & initialization*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Calculate font size for each device based on width and font size guidelines */
+    font-size: calc(15px + 0.390625vw);
+}
+
+/* Navigation bar */
+.nav-bar {
+    display: flex;
+    margin: 1vw;
+}
+
+.nav-bar-items {
+    float: left;
+    margin: 0 1vw 0 1vw;
+    font-size: medium;
+}
+
+.nav-bar-items a {
+    color: var(--primary-color);
+    font-family: "Lato", sans-serif;
+}
+
+.nav-bar-items a:hover {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: color .3s ease;
+}
+
+/* Project Description */
+.project-description {
+    font-size: 1rem;
+    font-weight: bolder;
+    margin: 2vh 2vw;
+    /*Horizontal alignment. */
+    justify-content: left;
+}
+
+/* Exchange Rate App */
+.app-container {
+    margin: 5vh 25vw 5vh 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.money-img {
+    margin: 2vh 2vw;
+    width: 150px;
+}
+
+.currency {
+    margin: 2vh 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency-selection {
+    padding: 1vh 1vw;
+    margin: 1vh 1vw;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+.currency-input {
+    padding: 1vh 1vw;
+    margin: 1vh 1vw;
+    width: 7.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+.exchange-rate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
