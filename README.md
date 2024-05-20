@@ -1,11 +1,9 @@
 # Jacob's Programming Portfolio
 
-Howdy!
-
 Welcome to my programming portfolio! My name is Jacob, and I’m an aspiring software engineer with a passion for
 cybersecurity.
-I'm currently wrapping up a B.S. in Computer Science from the University of Georgia. I've also been recently accepted to Georgia
-Tech's online M.S. in Computer Science for Fall 2024 admission.
+I'm currently wrapping up a B.S. in Computer Science from the University of Georgia. I've also recently been accepted to Georgia
+Tech's online M.S. in Computer Science program for Fall 2024 admission.
 
 I originally earned a B.B.A. in Management Information Systems with an emphasis in Information Security, but I decided
 to return to university to expand my computer science knowledge
