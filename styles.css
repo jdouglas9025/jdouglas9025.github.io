@@ -170,6 +170,89 @@ html {
     font-weight: bold;
 }
 
+/*Professional experience*/
+
+.experience-wrapper {
+    width: 90vw;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
+}
+
+.experience-overview {
+    width: 85vw;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 1.5vh 2vw;
+    justify-content: center; /*Horizontal alignment. */
+    align-items: center; /*Vertical alignment. */
+    text-align: center;
+    color: #fff;
+    background-color: var(--primaryColor);
+    padding: 0.5rem;
+    letter-spacing: 0.15rem;
+    text-shadow: 0.03125rem 0.03125rem 0 var(--shadowColor);
+    box-shadow: 0.15rem 0.15rem 0.3rem #777;
+    transform: skew(-10deg);
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh 1vw;
+    background-color: var(--backgroundColor);
+    box-shadow: 0.2rem 0.2rem 0.3rem #777;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.experience:hover {
+    box-shadow: 0.4rem 0.4rem 0.3rem #777;
+}
+
+.experience-text {
+    text-align: center;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    top: -10rem;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+.experience:hover .experience-text {
+    top: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.experience-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+
+.experience-role {
+    font-size: 1.25rem;
+    color: var(--primaryColor);
+}
+
+.experience-dates {
+    font-size: 1.00rem;
+    color: rgb(0, 0, 0);
+}
+
+.experience-img {
+    width: 22.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.experience:hover .experience-img {
+    opacity: 0.10;
+}
+
+
 /*Skills list*/
 .skills-list {
     display: flex;
